@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar de cliente</title>
+</head>
+<body>
+
+    <form class="form" onsubmit="clienteController.inserir(event)">
+        <div class="form-grop">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text">
+        </div>
+        <div class="form-grop">
+            <label for="cpf">cpf</label>
+            <input id="cpf" type="text">
+        </div>
+        <button class="btn" type="submit" >Criar</button>
+    </form>
+    <div class="clientes">
+        <h4 class="cli-title">Lista de clientes</h4>
+        <ul class="cli-list">
+
+        </ul>
+
+    </div>
+    <script src="js/model/cliente.js"></script>
+    <script src="js/model/clientes.js"></script>
+    <script src="js/controller/cliente-controller.js"></script>
+</body>
+</html>
